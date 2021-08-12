@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://dimatomilow.github.io/command-robot-test",
+  "homepage": "https://dimatomilow.github.io/3D-Mode-team5",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /command-robot-test/"
+    "build": "parcel build src/*.html --public-url /3D-Mode-team5/"
   },
   "repository": {
     "type": "git",
