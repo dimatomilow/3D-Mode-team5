@@ -1,6 +1,71 @@
-.hero {
+.header__line {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: gold;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.topmenu-list {
+  display: none;
+}
+.menu-tel-dropdown {
+  display: none;
+}
+.menu-lang-dropdown {
+  display: none;
+}
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.menu-tel-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .phone-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-tel-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topmenu-list {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu-lang {
+  font-family: Caviar Dreams;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: 0.01em;
+
+  color: #bdbdbd;
+}
+.menu-lang-btn {
+  border: none;
+  background-color: transparent;
 }
