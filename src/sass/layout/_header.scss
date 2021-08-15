@@ -18,6 +18,20 @@
   display: none;
 }
 
+// bbbbbbbbbbbbbbbb
+
+// @media screen and (min-width: 1444px) {
+//   .submenu-list {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+
+//   .topmenu-list__item:hover .submenu-list {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
+// ddddddddddddddddd
 .menu-tel-dropdown {
   display: none;
 }
@@ -49,7 +63,7 @@
   line-height: 0;
 }
 
-.menu-tel-dropdown__item:not(:last-child) {
+.phone-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -70,6 +84,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1443px) {
+  .header__line {
+    align-items: center;
+  }
+
   .logo-header {
     margin-right: 174px;
   }
@@ -95,14 +113,18 @@
   line-height: 20px;
   letter-spacing: 0.01em;
 
-  color: #2b2b2b;
+  color: $primaryColor;
 }
 
 @media screen and (min-width: 1444px) {
   .header__line {
     display: flex;
     align-items: flex-start;
-    padding-top: 40px;
+  }
+
+  .topmenu-list {
+    display: flex;
+    align-items: flex-start;
   }
 
   .logo-header {
@@ -117,12 +139,6 @@
   }
 }
 
-@media screen and (min-width: 1444px) {
-  .topmenu-list {
-    display: flex;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 1444px) {
   .burger-btn,
   .close-btn {
@@ -141,7 +157,7 @@
     text-align: center;
     letter-spacing: 0.01em;
 
-    color: #2b2b2b;
+    color: $primaryColor;
   }
   .topmenu-list__item:not(:last-child) {
     margin-right: 54px;
@@ -155,7 +171,7 @@
     line-height: 19px;
     letter-spacing: 0.01em;
 
-    color: #2b2b2b;
+    color: $primaryColor;
   }
 }
 .menu-lang-btn,
@@ -168,7 +184,7 @@
 
   letter-spacing: 0.01em;
 
-  color: #bdbdbd;
+  color: $langColor;
 }
 .menu-lang-btn {
   border: none;
