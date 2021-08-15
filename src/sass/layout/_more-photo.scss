@@ -1,0 +1,19 @@
+.more__title {
+  text-transform: uppercase;
+  color: $titleColor;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.mobil-list {
+  margin-bottom: 32px;
+}
+
+.mobil-list__photo:not(:last-child) {
+  margin-bottom: 16px;
+}
+.icon-system {
+  width: 45px;
+  height: 45px;
+  fill: $titleColor;
+}
