@@ -18,30 +18,43 @@
   display: none;
 }
 
+// bbbbbbbbbbbbbbbb
+
+@media screen and (min-width: 1444px) {
+  .topmenu-list {
+    display: block;
+  }
+
+  .services-dropdown__link:hover + .submenu-list,
+  .services-dropdown__link:focus + .submenu-list {
+    display: block;
+    animation: fadeIn;
+    animation-duration: 500ms;
+  }
+  .services-dropdown__item {
+    position: relative;
+  }
+
+  .submenu-list {
+    position: absolute;
+
+    padding: 8px 0;
+    top: 21px;
+    left: -40px;
+    width: 144px;
+  }
+}
+
+// ddddddddddddddddd
+
 .menu-tel-dropdown {
   display: none;
 }
 .menu-lang-dropdown {
   display: none;
 }
-.burger-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
-.close-btn {
-  display: none;
-}
-
-.close-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
+.burger-btn,
+.close-btn,
 .menu-tel-btn {
   background-color: transparent;
   border: none;
@@ -49,7 +62,11 @@
   line-height: 0;
 }
 
-.menu-tel-dropdown__item:not(:last-child) {
+.close-btn {
+  display: none;
+}
+
+.phone-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -70,6 +87,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1443px) {
+  .header__line {
+    align-items: center;
+  }
+
   .logo-header {
     margin-right: 174px;
   }
@@ -95,14 +116,18 @@
   line-height: 20px;
   letter-spacing: 0.01em;
 
-  color: #2b2b2b;
+  color: $primaryColor;
 }
 
 @media screen and (min-width: 1444px) {
   .header__line {
     display: flex;
     align-items: flex-start;
-    padding-top: 40px;
+  }
+
+  .topmenu-list {
+    display: flex;
+    align-items: flex-start;
   }
 
   .logo-header {
@@ -117,12 +142,6 @@
   }
 }
 
-@media screen and (min-width: 1444px) {
-  .topmenu-list {
-    display: flex;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 1444px) {
   .burger-btn,
   .close-btn {
@@ -141,10 +160,13 @@
     text-align: center;
     letter-spacing: 0.01em;
 
-    color: #2b2b2b;
+    color: $primaryColor;
   }
   .topmenu-list__item:not(:last-child) {
     margin-right: 54px;
+  }
+  .submenu-list {
+    text-align: center;
   }
 
   .submenu-list__link {
@@ -155,7 +177,11 @@
     line-height: 19px;
     letter-spacing: 0.01em;
 
-    color: #2b2b2b;
+    color: $primaryColor;
+  }
+
+  .submenu-list__item:not(:last-child) {
+    margin-bottom: 6px;
   }
 }
 .menu-lang-btn,
@@ -168,7 +194,7 @@
 
   letter-spacing: 0.01em;
 
-  color: #bdbdbd;
+  color: $langColor;
 }
 .menu-lang-btn {
   border: none;
