@@ -1,6 +1,176 @@
-.hero {
+.link {
+  text-decoration: none;
+}
+
+.header__line {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: gold;
+  color: var($fontNav);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.topmenu-list {
+  display: none;
+}
+.submenu-list {
+  display: none;
+}
+
+.menu-tel-dropdown {
+  display: none;
+}
+.menu-lang-dropdown {
+  display: none;
+}
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.close-btn {
+  display: none;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.menu-tel-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.menu-tel-dropdown__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .phone-list {
+    display: none;
+  }
+
+  .logo-header {
+    margin-right: 23px;
+  }
+  .burger-btn {
+    margin-right: 46px;
+  }
+  .menu-tel-btn {
+    margin-right: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1443px) {
+  .logo-header {
+    margin-right: 174px;
+  }
+  .burger-btn {
+    margin-right: 60px;
+  }
+  .phone-list {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-tel-btn {
+    display: none;
+  }
+}
+
+.phone-list__link {
+  font-family: var($fontNav);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #2b2b2b;
+}
+
+@media screen and (min-width: 1444px) {
+  .header__line {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .logo-header {
+    margin-right: 213px;
+  }
+  .topmenu-list {
+    margin-right: 109px;
+  }
+
+  .phone-list {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .topmenu-list {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .burger-btn,
+  .close-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .topmenu-list__link {
+    font-family: var($fontNav);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #2b2b2b;
+  }
+  .topmenu-list__item:not(:last-child) {
+    margin-right: 54px;
+  }
+
+  .submenu-list__link {
+    font-family: var($fontNav);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+
+    color: #2b2b2b;
+  }
+}
+.menu-lang-btn,
+.menu-lang-dropdown__link {
+  font-family: var($fontNav);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: 0.01em;
+
+  color: #bdbdbd;
+}
+.menu-lang-btn {
+  border: none;
+  background-color: transparent;
 }
