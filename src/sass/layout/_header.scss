@@ -20,25 +20,42 @@
 
 // bbbbbbbbbbbbbbbb
 
-// @media screen and (min-width: 1444px) {
-//   .submenu-list {
-//     opacity: 1;
-//     visibility: visible;
-//   }
+@media screen and (min-width: 1444px) {
+  .topmenu-list {
+    display: block;
+  }
 
-//   .topmenu-list__item:hover .submenu-list {
-//     opacity: 1;
-//     visibility: visible;
-//   }
-// }
+  .services-dropdown__link:hover + .submenu-list,
+  .services-dropdown__link:focus + .submenu-list {
+    display: block;
+    animation: fadeIn;
+    animation-duration: 500ms;
+  }
+  .services-dropdown__item {
+    position: relative;
+  }
+
+  .submenu-list {
+    position: absolute;
+
+    padding: 8px 0;
+    top: 21px;
+    left: -40px;
+    width: 144px;
+  }
+}
+
 // ddddddddddddddddd
+
 .menu-tel-dropdown {
   display: none;
 }
 .menu-lang-dropdown {
   display: none;
 }
-.burger-btn {
+.burger-btn,
+.close-btn,
+.menu-tel-btn {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -47,20 +64,6 @@
 
 .close-btn {
   display: none;
-}
-
-.close-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-}
-
-.menu-tel-btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
 }
 
 .phone-list__item:not(:last-child) {
@@ -162,6 +165,9 @@
   .topmenu-list__item:not(:last-child) {
     margin-right: 54px;
   }
+  .submenu-list {
+    text-align: center;
+  }
 
   .submenu-list__link {
     font-family: $fontNav;
@@ -172,6 +178,10 @@
     letter-spacing: 0.01em;
 
     color: $primaryColor;
+  }
+
+  .submenu-list__item:not(:last-child) {
+    margin-bottom: 6px;
   }
 }
 .menu-lang-btn,
