@@ -1,4 +1,4 @@
-<section class="">
+<section class="more-photo">
   <div class="container">
     <h2 class="more__title">БІЛЬШЕ ФОТО</h2>
     <ul class="mobil-list">
@@ -21,6 +21,27 @@
           />
           <img src="/images/more-photo/mobil/mobil-3d-1-x1.jpg" alt="" />
         </picture>
+
+        <div class="overlay">
+          <picture class="overlay__img">
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /images/more-photo/mobil/mobil-3d-1-x1.webp 1x,
+                /images/more-photo/mobil/mobil-3d-1-x2.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /images/more-photo/mobil/mobil-3d-1-x1.jpg 1x,
+                /images/more-photo/mobil/mobil-3d-1-x2.jpg 2x
+              "
+            />
+            <img src="/images/more-photo/mobil/mobil-3d-1-x1.jpg" alt="" />
+          </picture>
+        </div>
       </li>
       <li class="mobil-list__photo">
         <picture>
@@ -47,26 +68,25 @@
           <source
             media="(max-width: 767px)"
             srcset="
-              /images/more-photo/mobil/mobil-3d-1-x1.webp 1x,
-              /images/more-photo/mobil/mobil-3d-1-x2.webp 2x
+              /images/more-photo/mobil/mobil-3d-3-x1.webp 1x,
+              /images/more-photo/mobil/mobil-3d-3-x2.webp 2x
             "
             type="image/webp"
           />
           <source
             media="(max-width: 767px)"
             srcset="
-              /images/more-photo/mobil/mobil-3d-1-x1.jpg 1x,
-              /images/more-photo/mobil/mobil-3d-1-x2.jpg 2x
+              /images/more-photo/mobil/mobil-3d-3-x1.jpg 1x,
+              /images/more-photo/mobil/mobil-3d-3-x2.jpg 2x
             "
           />
-          <img src="/images/more-photo/mobil/mobil-3d-1-x1.jpg" alt="" />
+          <img src="/images/more-photo/mobil/mobil-3d-3-x1.jpg" alt="" />
         </picture>
       </li>
     </ul>
-    <div>
-      <svg class="icon-system">
-        <use href="/images/system.svg"></use>
-      </svg>
-    </div>
+
+    <svg class="icon-system">
+      <use href="/images/sprite.svg#icon-group"></use>
+    </svg>
   </div>
 </section>
