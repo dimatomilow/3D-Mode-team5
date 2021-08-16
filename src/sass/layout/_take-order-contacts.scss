@@ -1,0 +1,51 @@
+.order-contacts {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.order-contacts__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.27;
+
+  color: #487996;
+}
+.order-phone,
+.order-time {
+  text-transform: uppercase;
+}
+
+.order-contacts__list:not(:first-child) {
+  padding-top: 24px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 0;
+  }
+}
+.order-contacts__list:last-child {
+  @media screen and(min-width:768px) {
+    text-align: right;
+  }
+}
+
+.order-contacts__image {
+  display: none;
+
+  @media screen and(min-width:1440px) {
+    background-image: url(../images/take-order/flower-desk.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/flower-desk@2x.png);
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 438px;
+  height: 281px;
+}
