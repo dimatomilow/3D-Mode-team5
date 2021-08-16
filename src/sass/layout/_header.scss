@@ -1,7 +1,3 @@
-.link {
-  text-decoration: none;
-}
-
 .header__line {
   display: flex;
   align-items: center;
@@ -14,11 +10,30 @@
 .topmenu-list {
   display: none;
 }
+// -------- Nav-arrow ------
+.services-dropdown__link {
+  display: flex;
 
+  align-items: baseline;
+}
+
+.topmenu-list__svg {
+  margin-left: 4px;
+
+  transition: transform 500ms;
+}
+.services-dropdown__link:hover .topmenu-list__svg,
+.services-dropdown__link:focus .topmenu-list__svg {
+  transform: rotateX(180deg);
+}
+
+// -------- Nav-arrow end ------
 // -------- Submenu ----------
 
 .submenu-list {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms linear, visibility 500ms linear, transform 500ms;
 }
 
 @media screen and (min-width: 1444px) {
@@ -27,8 +42,11 @@
   }
 
   .services-dropdown__link:hover + .submenu-list,
-  .services-dropdown__link:focus + .submenu-list {
-    display: block;
+  .services-dropdown__link:focus + .submenu-list,
+  .submenu-list:hover,
+  .submenu-list:focus {
+    opacity: 1;
+    visibility: visible;
     animation: fadeIn;
     animation-duration: 500ms;
   }
@@ -49,12 +67,7 @@
 
 // ------- Submenu end ---------
 
-.close-btn {
-  display: none;
-}
-
 .burger-btn,
-.close-btn,
 .menu-tel-btn {
   background-color: transparent;
   border: none;
@@ -230,8 +243,7 @@
 }
 
 @media screen and (min-width: 1444px) {
-  .burger-btn,
-  .close-btn {
+  .burger-btn {
     display: none;
   }
 }
