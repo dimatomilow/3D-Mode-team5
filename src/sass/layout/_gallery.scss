@@ -1,0 +1,34 @@
+.gallery-section {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+
+  color: $titleColor;
+}
+
+.gallery-list__text {
+  margin-bottom: 24px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $titleColor;
+}
+
+.gallery-list__thumb {
+  margin-bottom: 7px;
+}
+
+.gallery-list__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
