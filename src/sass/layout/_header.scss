@@ -36,7 +36,7 @@
   transition: opacity 500ms linear, visibility 500ms linear, transform 500ms;
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .topmenu-list {
     display: block;
   }
@@ -186,7 +186,7 @@
 
 // ----------- Lang-menu end ------------
 
-@media screen and (min-width: 768px) and (max-width: 1443px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .header__line {
     align-items: center;
   }
@@ -219,7 +219,7 @@
   color: $primaryColor;
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .header__line {
     display: flex;
     align-items: flex-start;
@@ -242,13 +242,13 @@
   }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .burger-btn {
     display: none;
   }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   .topmenu-list__link {
     font-family: $fontNav;
     font-style: normal;
