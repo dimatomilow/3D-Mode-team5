@@ -1,0 +1,95 @@
+.section-title {
+  font-family: 'Cera Pro';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #487996;
+}
+
+.contacts-title {
+  margin-bottom: 16px;
+}
+
+.contacts__video {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+.contacts__description {
+  font-family: 'Cera Pro';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+
+  color: #2b2b2b;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-page__hero-container {
+    width: 688px;
+  }
+  .section-title {
+    font-size: 36px;
+  }
+  .contacts__hero-wrapper {
+    display: flex;
+  }
+
+  .contacts__video {
+    width: 247px;
+    height: 192px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .contacts-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .contacts-page__hero-container {
+    width: 1100px;
+  }
+  .contacts__hero {
+    padding-top: 0;
+  }
+  .section-title {
+    font-size: 48px;
+  }
+  .contacts__video {
+    width: 515px;
+    height: 315px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .contacts__description {
+    font-size: 18px;
+    line-height: 1.27;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .contacts__smile {
+    // display: block;
+    // margin-top: 57px;
+    // width: 49px;
+    // height: auto;
+    display: inline-block;
+    font-size: 45px;
+    line-height: 1.1;
+    width: 100%;
+    margin-top: 57px;
+  }
+}
