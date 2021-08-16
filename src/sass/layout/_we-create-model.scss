@@ -15,19 +15,22 @@
     font-size: 24px;
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: 1400px) {
     font-size: 36px;
     margin-bottom: 52px;
   }
 }
 .create-model__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .create-model__item {
   @media screen and (min-width: 768px) {
     margin-right: 12px;
   }
-  @media screen and (min-width: 1444px) {
+  @media screen and (min-width: 1400px) {
     margin-right: 20px;
   }
 }

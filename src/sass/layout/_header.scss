@@ -21,7 +21,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1400px) {
   .topmenu-list {
     display: block;
   }
@@ -173,7 +173,7 @@
 
 // ----------- Lang-menu end ------------
 
-@media screen and (min-width: 768px) and (max-width: 1443px) {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
   .header__line {
     align-items: center;
   }
@@ -206,7 +206,7 @@
   color: $primaryColor;
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1400px) {
   .header__line {
     display: flex;
     align-items: flex-start;
@@ -229,14 +229,14 @@
   }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1400px) {
   .burger-btn,
   .close-btn {
     display: none;
   }
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1400px) {
   .topmenu-list__link {
     font-family: $fontNav;
     font-style: normal;
