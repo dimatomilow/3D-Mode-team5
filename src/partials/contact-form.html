@@ -1,0 +1,51 @@
+<!--CONTACT FORM-->
+
+<section class="page-section contacts-page-section">
+  <div class="container contacts-page__container contacts-page__form-container">
+    <form class="contact-form">
+      <p class="contact-form__title">Зв'яжіться з нами</p>
+
+      <div class="contact-form__field">
+        <input
+          class="contact-form__input"
+          type="text"
+          required
+          name="user-name"
+          minlength="2"
+          pattern="[a-zA-Zа-яёА-ЯЁ]+"
+          title="Имя должно содержать символы кирилицы или латиницы"
+          placeholder=" "
+        />
+        <label for="user-name" class="contact-form__label">Ім’я </label>
+      </div>
+
+      <div class="contact-form__field">
+        <input
+          class="contact-form__input"
+          type="email"
+          required
+          name="user-email"
+          placeholder=" "
+        />
+        <label for="user-email" class="contact-form__label" lang="eng">Email</label>
+      </div>
+
+      <label class="contact-form__ms-label">
+        Повідомлення
+        <div class="contact-form__message-wrapper">
+          <textarea
+            name="user-message"
+            class="contact-form__message"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <svg class="contact-form__icon">
+            <use href="./images/sprite.svg#icon-paper-clip"></use>
+          </svg>
+        </div>
+      </label>
+      <p class="contact-form__note">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+
+      <button type="submit" class="primary-button contact-form__btn">Відправити</button>
+    </form>
+  </div>
+</section>
