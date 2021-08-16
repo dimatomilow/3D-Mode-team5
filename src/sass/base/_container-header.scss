@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px) {
+  .container-header {
+    width: 320px;
+    padding-top: 29px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-header {
+    width: 768px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .container-header {
+    width: 1320px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 73px;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+}
