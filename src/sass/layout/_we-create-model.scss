@@ -1,0 +1,19 @@
+.create-model__section {
+  @media screen and (max-width: 767px) {
+    margin-top: 248px;
+  }
+}
+.create-model__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 52px;
+  color: $titleColor;
+  letter-spacing: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 36px;
+  }
+}
