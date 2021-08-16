@@ -10,10 +10,24 @@
   margin-top: 52px;
   color: $titleColor;
   letter-spacing: 0;
+  margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 24px;
+    margin-bottom: 24px;
   }
   @media screen and (min-width: 1444px) {
     font-size: 36px;
+    margin-bottom: 52px;
+  }
+}
+.create-model__list {
+  display: flex;
+}
+.create-model__item {
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-right: 20px;
   }
 }

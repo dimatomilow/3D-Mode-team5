@@ -4,15 +4,21 @@
   }
   position: relative;
 }
-.background-image {
+.creations__section::after {
+  content: '';
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   @media screen and (max-width: 767px) {
     position: absolute;
     width: 280px;
     height: 164px;
     margin-top: 32px;
     background-image: url('/images/modelling/mobile/pic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+  @media not all,
+    screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/mobile/pic@2x.jpg');
   }
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -21,20 +27,22 @@
     width: 246px;
     height: 144px;
     background-image: url('/images/modelling/tablet/pic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+  @media not all,
+    screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/tablet/pic@2x.jpg');
   }
   @media screen and (min-width: 1444px) {
     position: absolute;
-    content: '';
-    bottom: 0;
-    right: 0;
+    bottom: 27px;
+    right: 617px;
     width: 246px;
     height: 144px;
-    background-image: url('/images/modelling/tablet/pic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: auto;
+    background-image: url('/images/modelling/desktop/pic.jpg');
+  }
+  @media not all,
+    screen and (min-width: 1444px) and (min-resolution: 192dpi) and (min-width: 1444px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/tablet/pic@2x.jpg');
   }
 }
 .creations__title {
