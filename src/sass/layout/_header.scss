@@ -7,7 +7,9 @@
   display: flex;
   align-items: center;
 }
-
+.topmenu-list {
+  display: none;
+}
 // -------- Nav-arrow ------
 .services-dropdown__link {
   display: flex;
@@ -28,18 +30,10 @@
 // -------- Nav-arrow end ------
 // -------- Submenu ----------
 
-.topmenu-list {
-  display: none;
-}
-
 .submenu-list {
   opacity: 0;
   visibility: hidden;
-
-  transition: all 250ms linear;
-
-  
-
+  transition: opacity 250ms linear, visibility 250ms linear, transform 250ms;
 }
 
 @media screen and (min-width: 1440px) {
@@ -47,15 +41,14 @@
     display: block;
   }
 
-  .services-dropdown__item:hover > .submenu-list,
-  .services-dropdown__item:focus-within > .submenu-list {
+  .services-dropdown__link:hover + .submenu-list,
+  .services-dropdown__link:focus + .submenu-list,
+  .submenu-list:hover,
+  .submenu-list:focus {
     opacity: 1;
     visibility: visible;
-n
-
     animation: fadeIn;
     animation-duration: 250ms;
-
   }
   .services-dropdown__item {
     position: relative;
@@ -120,11 +113,9 @@ n
 .menu-tel-dropdown {
   position: absolute;
 
-
-  visibility: hidden;
-  opacity: 0;
-  transition: all 250ms linear;
-
+  display: none;
+  animation: fadeIn;
+  animation-duration: 250ms;
 
   top: 47px;
   left: 10px;
@@ -150,13 +141,6 @@ n
   transform: rotate(45deg);
   z-index: -1;
 }
-
-.menu-tel:focus > .menu-tel-dropdown,
-.menu-tel:hover > .menu-tel-dropdown {
-  visibility: visible;
-  opacity: 1;
-}
-
 // ------------Tel-menu end------
 
 // -------- Lang-menu ----------
@@ -186,11 +170,9 @@ n
 .menu-lang-dropdown {
   position: absolute;
 
-
-  visibility: hidden;
-  opacity: 0;
-  transition: all 250ms linear;
-
+  display: none;
+  animation: fadeIn;
+  animation-duration: 250ms;
 
   top: -6px;
   left: 18px;
@@ -203,12 +185,9 @@ n
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
-.menu-lang:focus-within > .menu-lang-dropdown,
-.menu-lang:hover > .menu-lang-dropdown {
-  visibility: visible;
-  opacity: 1;
-
+.menu-lang-btn:hover + .menu-lang-dropdown,
+.menu-lang-btn:focus + .menu-lang-dropdown {
+  display: inline-block;
 }
 
 // ----------- Lang-menu end ------------
