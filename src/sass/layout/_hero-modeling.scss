@@ -35,6 +35,7 @@
     font-size: 18px;
     margin: 0;
     line-height: 1.27;
+    max-width: 515px;
   }
 }
 .modelling__text-help {
@@ -44,11 +45,12 @@
   @media screen and (min-width: 1440px) {
     display: flex;
     margin-left: 43px;
-    height: 92px;
+    max-width: 515px;
   }
 }
 .modelling__box {
   @media screen and (min-width: 1440px) {
     display: flex;
+    align-items: center;
   }
 }
