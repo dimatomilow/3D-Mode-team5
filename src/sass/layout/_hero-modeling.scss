@@ -2,7 +2,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
   }
@@ -20,7 +20,7 @@
     font-size: 36px;
     margin-bottom: 16px;
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     font-size: 48px;
   }
 }
@@ -30,7 +30,7 @@
   color: $primaryColor;
   letter-spacing: 0;
   font-weight: 300;
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.27;
   }
@@ -39,11 +39,11 @@
   @media screen and (max-width: 767px) {
     margin-top: 16px;
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
   }
 }
 .modelling__box {
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
   }
 }
