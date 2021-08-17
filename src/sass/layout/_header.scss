@@ -7,9 +7,7 @@
   display: flex;
   align-items: center;
 }
-.topmenu-list {
-  display: none;
-}
+
 // -------- Nav-arrow ------
 .services-dropdown__link {
   display: flex;
@@ -20,7 +18,7 @@
 .topmenu-list__svg {
   margin-left: 4px;
 
-  transition: transform 250ms;
+  transition: all 250ms linear;
 }
 .services-dropdown__link:hover .topmenu-list__svg,
 .services-dropdown__link:focus .topmenu-list__svg {
@@ -30,10 +28,14 @@
 // -------- Nav-arrow end ------
 // -------- Submenu ----------
 
+.topmenu-list {
+  display: none;
+}
+
 .submenu-list {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 250ms linear, visibility 250ms linear, transform 250ms;
+  transition: all 250ms linear;
 }
 
 @media screen and (min-width: 1440px) {
@@ -41,15 +43,12 @@
     display: block;
   }
 
-  .services-dropdown__link:hover + .submenu-list,
-  .services-dropdown__link:focus + .submenu-list,
-  .submenu-list:hover,
-  .submenu-list:focus {
+  .services-dropdown__item:hover > .submenu-list,
+  .services-dropdown__item:focus-within > .submenu-list {
     opacity: 1;
     visibility: visible;
-    animation: fadeIn;
-    animation-duration: 250ms;
   }
+
   .services-dropdown__item {
     position: relative;
     padding-bottom: 30px;
@@ -113,9 +112,10 @@
 .menu-tel-dropdown {
   position: absolute;
 
-  display: none;
-  animation: fadeIn;
-  animation-duration: 250ms;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 250ms linear;
 
   top: 47px;
   left: 10px;
@@ -141,6 +141,13 @@
   transform: rotate(45deg);
   z-index: -1;
 }
+
+.menu-tel:focus > .menu-tel-dropdown,
+.menu-tel:hover > .menu-tel-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
 // ------------Tel-menu end------
 
 // -------- Lang-menu ----------
@@ -170,9 +177,9 @@
 .menu-lang-dropdown {
   position: absolute;
 
-  display: none;
-  animation: fadeIn;
-  animation-duration: 250ms;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms linear;
 
   top: -6px;
   left: 18px;
@@ -185,9 +192,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.menu-lang-btn:hover + .menu-lang-dropdown,
-.menu-lang-btn:focus + .menu-lang-dropdown {
-  display: inline-block;
+.menu-lang:hover > .menu-lang-dropdown,
+.menu-lang:focus-within > .menu-lang-dropdown {
+  visibility: visible;
+  opacity: 1;
 }
 
 // ----------- Lang-menu end ------------
