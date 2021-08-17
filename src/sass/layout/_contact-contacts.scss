@@ -1,0 +1,136 @@
+// CONTACT PARTIAL
+
+.contact__item {
+  font-family: $primaryfont;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  color: $primaryColor;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.contact__info-title {
+  margin-bottom: 8px;
+
+  font-family: $primaryfont;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.27;
+  text-transform: uppercase;
+
+  color: $titleColor;
+}
+.contact__tel {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.contact__info-title--email {
+  text-transform: capitalize;
+}
+
+.hours-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-page__contact-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .contact__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact__info-title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .contact__item--hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .hours-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-page-section {
+    padding-top: 0;
+  }
+  .contact-section-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .contacts-page__contact-container {
+    padding-left: 30px;
+    padding-right: 0;
+    margin-right: 32px;
+    width: 550px;
+  }
+
+  .contact__tel {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  .contact__list {
+    flex-direction: column;
+  }
+  .contact__item--hours {
+    align-items: start;
+  }
+
+  .contact__item {
+    &:not(:last-child) {
+      margin-bottom: 68px;
+    }
+  }
+
+  .contact__info-title {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  .contact__item {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 68px;
+    }
+  }
+  .hours-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+  }
+  .contact__hours {
+    margin-left: 5px;
+  }
+}
