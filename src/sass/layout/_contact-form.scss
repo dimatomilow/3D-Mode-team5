@@ -109,14 +109,15 @@
   right: 21px;
   bottom: 21px;
 
-  //   fill: #cdcdcd;
+  fill: #cdcdcd;
 
-  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  //   &:hover,
-  //   &:focus {
-  //     fill: $iconColor;
-  //   }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $iconColor;
+  }
 }
 
 .contact-form__note {
