@@ -1,7 +1,3 @@
-.link {
-  text-decoration: none;
-}
-
 .header__line {
   display: flex;
   align-items: center;
@@ -11,27 +7,48 @@
   display: flex;
   align-items: center;
 }
+
+// -------- Nav-arrow ------
+.services-dropdown__link {
+  display: flex;
+
+  align-items: baseline;
+}
+
+.topmenu-list__svg {
+  margin-left: 4px;
+
+  transition: all 250ms linear;
+}
+.services-dropdown__link:hover .topmenu-list__svg,
+.services-dropdown__link:focus .topmenu-list__svg {
+  transform: rotateX(180deg);
+}
+
+// -------- Nav-arrow end ------
+// -------- Submenu ----------
+
 .topmenu-list {
   display: none;
 }
 
-// -------- Submenu ----------
-
-.submenu-list {
-  display: none;
-}
 
 @media screen and (min-width: 1400px) {
-  .topmenu-list {
-    display: block;
+
+.submenu-list {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms linear;
+}
+
+
+
+  .services-dropdown__item:hover > .submenu-list,
+  .services-dropdown__item:focus-within > .submenu-list {
+    opacity: 1;
+    visibility: visible;
   }
 
-  .services-dropdown__link:hover + .submenu-list,
-  .services-dropdown__link:focus + .submenu-list {
-    display: block;
-    animation: fadeIn;
-    animation-duration: 500ms;
-  }
   .services-dropdown__item {
     position: relative;
     padding-bottom: 30px;
@@ -49,12 +66,7 @@
 
 // ------- Submenu end ---------
 
-.close-btn {
-  display: none;
-}
-
 .burger-btn,
-.close-btn,
 .menu-tel-btn {
   background-color: transparent;
   border: none;
@@ -77,7 +89,7 @@
   .burger-btn {
     margin-right: 46px;
   }
-  .menu-tel-btn {
+  .menu-tel {
     margin-right: 21px;
   }
 }
@@ -100,9 +112,10 @@
 .menu-tel-dropdown {
   position: absolute;
 
-  display: none;
-  animation: fadeIn;
-  animation-duration: 500ms;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 250ms linear;
 
   top: 47px;
   left: 10px;
@@ -128,9 +141,17 @@
   transform: rotate(45deg);
   z-index: -1;
 }
+
+.menu-tel:focus > .menu-tel-dropdown,
+.menu-tel:hover > .menu-tel-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
 // ------------Tel-menu end------
 
 // -------- Lang-menu ----------
+
 .menu-lang-btn,
 .menu-lang-dropdown__link {
   font-family: $fontNav;
@@ -156,9 +177,9 @@
 .menu-lang-dropdown {
   position: absolute;
 
-  display: none;
-  animation: fadeIn;
-  animation-duration: 500ms;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 250ms linear;
 
   top: -6px;
   left: 18px;
@@ -171,9 +192,17 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.menu-lang:hover > .menu-lang-dropdown,
+.menu-lang:focus-within > .menu-lang-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
 // ----------- Lang-menu end ------------
 
-@media screen and (min-width: 768px) and (max-width: 1400px) {
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
   .header__line {
     align-items: center;
   }
@@ -206,7 +235,9 @@
   color: $primaryColor;
 }
 
-@media screen and (min-width: 1400px) {
+
+@media screen and (min-width: 1440px) {
+
   .header__line {
     display: flex;
     align-items: flex-start;
@@ -229,14 +260,20 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .burger-btn,
-  .close-btn {
+
+
+@media screen and (min-width: 1440px) {
+  .burger-btn {
+
     display: none;
   }
 }
 
-@media screen and (min-width: 1400px) {
+
+
+
+@media screen and (min-width: 1440px) {
+
   .topmenu-list__link {
     font-family: $fontNav;
     font-style: normal;
