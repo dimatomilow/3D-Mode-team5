@@ -1,0 +1,122 @@
+.take-order__contacts {
+  padding-top: 52px;
+  padding-bottom: 76px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 76px;
+  }
+  @media screen and(min-width:1440px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.order-contacts {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and(min-width:1440px) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+
+.order-contacts__email,
+.order-contacts__work-time {
+  margin-top: 24px;
+
+  @media screen and(min-width:768px) {
+    margin-top: 0;
+  }
+
+  @media screen and(min-width:1440px) {
+    margin-top: 30px;
+  }
+}
+.order-contacts__work-time {
+  @media screen and(min-width:768px) {
+    text-align: right;
+  }
+}
+.order-contacts__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.27;
+  color: #487996;
+
+  @media screen and(min-width:768px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  @media screen and(min-width:1440px) {
+    font-size: 36px;
+  }
+}
+.order-phone,
+.order-time {
+  text-transform: uppercase;
+}
+
+.order-contacts__list {
+  margin-top: 8px;
+
+  @media screen and(min-width:1440px) {
+    margin-top: 18px;
+  }
+}
+
+.order-contacts__item {
+  @media screen and(min-width:1440px) {
+    display: flex;
+    justify-content: flex-end;
+
+    &:last-child {
+      margin-top: 18px;
+    }
+  }
+}
+.order-contacts__day {
+  padding-top: 8px;
+  @media screen and(min-width:1440px) {
+    padding-top: 0px;
+  }
+}
+
+.order-contacts__number {
+  margin-top: 8px;
+  @media screen and(min-width:1440px) {
+    margin-top: 18px;
+  }
+}
+
+.last {
+  padding-top: 0px;
+}
+
+.order-contacts__image {
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0% 0% 15% 15%;
+  width: 438px;
+  height: 293px;
+  margin-top: 75px;
+  margin-right: 0;
+  padding: 0;
+
+  @media screen and(min-width:1440px) {
+    display: block;
+    background-image: url(../images/take-order/flower-desk.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/flower-desk@2x.png);
+    }
+  }
+}

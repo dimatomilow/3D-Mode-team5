@@ -1,0 +1,191 @@
+.take-order__hero:not(:first-child) {
+  padding-top: 52px;
+}
+.order-hero__title {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+
+  margin-bottom: 16px;
+  text-transform: uppercase;
+
+  @media screen and(min-width:768px) {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and(min-width:1440px) {
+    font-size: 48px;
+  }
+}
+
+.order-hero__wraper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 auto;
+  }
+}
+
+.order-hero__box {
+  @media screen and (min-width: 768px) {
+    max-width: 381px;
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 515px;
+    margin-left: 32px;
+  }
+}
+.order__description {
+  margin-top: 16px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2b2b2b;
+
+  @media screen and(min-width:768px) {
+    margin-top: 0;
+  }
+  @media screen and(min-width:1440px) {
+    font-size: 18px;
+    line-height: 1.27;
+  }
+}
+
+.order-hero__galary-car,
+.order-hero__galary-column {
+  margin-right: 41px;
+}
+.order-hero__galary-car {
+  border-radius: 0% 50% 50% 0%;
+}
+.order-hero__galary-column {
+  border-radius: 50% 0% 50% 0%;
+}
+.order-hero__galary-lamp {
+  border-radius: 0% 0% 50% 0%;
+}
+
+.order-hero__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 16px;
+  margin-bottom: 0;
+  height: 171px;
+  border-radius: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 247px;
+    height: 116px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 515px;
+    height: 315px;
+  }
+
+  background-image: url(../images/take-order/hero-mobile.jpg);
+  background-image: url(../images/take-order/hero-mobile.webp);
+
+  @media screen and(min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/take-order/hero-mobile@2x.jpg);
+    background-image: url(../images/take-order/hero-mobile@2x.webp);
+  }
+
+  @media screen and(min-width:768px) {
+    height: 116px;
+    background-image: url(../images/take-order/hero-tablet.jpg);
+    background-image: url(../images/take-order/hero-tablet.webp);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/hero-tablet@2x.jpg);
+      background-image: url(../images/take-order/hero-tablet@2x.webp);
+    }
+
+    @media screen and(min-width:1440px) {
+      height: 315px;
+      max-width: 1600px;
+      background-image: url(../images/take-order/hero-desk.jpg);
+      background-image: url(../images/take-order/hero-desk.webp);
+
+      @media screen and(min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/take-order/hero-desk@2x.jpg);
+        background-image: url(../images/take-order/hero-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.order__text:not(:first-child) {
+  margin-top: 16px;
+
+  @media screen and(min-width:1440px) {
+    margin-top: 24px;
+  }
+}
+
+.order-hero__galary {
+  display: none;
+  @media screen and(min-width:1440px) {
+    display: flex;
+    margin-top: 55px;
+  }
+  div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 144px;
+    height: 144px;
+
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.order-hero__galary-car {
+  @media screen and(min-width:1440px) {
+    background-image: url(../images/take-order/car-desk.jpg);
+    background-image: url(../images/take-order/car-desk.webp);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/car-desk@2x.jpg);
+      background-image: url(../images/take-order/car-desk@2x.webp);
+    }
+  }
+}
+.order-hero__galary-column {
+  @media screen and(min-width:1440px) {
+    background-image: url(../images/take-order/column-desk.jpg);
+    background-image: url(../images/take-order/column-desk.webp);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/column-desk@2x.jpg);
+      background-image: url(../images/take-order/column-desk@2x.webp);
+    }
+  }
+}
+.order-hero__galary-lamp {
+  @media screen and(min-width:1440px) {
+    background-image: url(../images/take-order/lamp-desk.jpg);
+    background-image: url(../images/take-order/lamp-desk.webp);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/take-order/lamp-desk@2x.jpg);
+      background-image: url(../images/take-order/lamp-desk@2x.webp);
+    }
+  }
+}
