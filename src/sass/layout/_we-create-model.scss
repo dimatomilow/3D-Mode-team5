@@ -11,6 +11,7 @@
   color: $titleColor;
   letter-spacing: 0;
   margin-bottom: 16px;
+
   @media screen and (min-width: 768px) {
     font-size: 24px;
     margin-bottom: 24px;
@@ -23,10 +24,9 @@
 .create-model__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
   }
 }
-.create-model__item {
+.create-model__item:not(:last-child) {
   @media screen and (min-width: 768px) {
     margin-right: 12px;
   }
