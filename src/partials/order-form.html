@@ -29,8 +29,15 @@
                 </select>
                 <label class="order-form__lable" for="feedback"> Повідомлення
                 <textarea class="order-form__feedback" name="text" id="feedback" placeholder="Залишіть своє повідомлення"></textarea>
-                <input class="add-docs" placeholder="" type="file" name="add-docs" id="add-docs" required>
                 </label> 
+                <div class="add-docs__wrapper">
+                    <input class="add-docs" placeholder="" type="file" name="add-docs" id="add-docs" required>
+                    <label class="add-docs__img" for="add-docs">
+                        <svg class="order-form__icon" width="20px" height="20px">
+                            <use href="../src/images/sprite.svg#icon-paper-clip"></use>
+                        </svg>
+                    </label>
+                </div>
                 <p class="order-form__clue">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>            
                 <button class="order__button" type="submit">Відправити</button>
             </div>
