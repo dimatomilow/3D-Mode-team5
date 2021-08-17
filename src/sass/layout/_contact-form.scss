@@ -12,7 +12,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.27;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: $titleColor;
@@ -32,11 +31,6 @@
   transform: translateY(-50%);
 
   transition: transform 250ms linear;
-
-  font-family: $primaryfont;
-  font-weight: 400;
-  font-style: 16px;
-  letter-spacing: 0.03em;
 }
 .contact-form__input {
   width: 100%;
@@ -48,7 +42,6 @@
   font-family: $primaryfont;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.03em;
   text-transform: capitalize;
 
   color: $primaryColor;
@@ -66,9 +59,7 @@
 .contact-form__ms-label {
   font-family: $primaryfont;
   font-weight: 400;
-  font-style: 16px;
-  letter-spacing: 0.03em;
-  margin-bottom: 1px;
+  font-size: 16px;
 }
 
 .contact-form__message {
@@ -88,7 +79,6 @@
     font-family: $primaryfont;
     font-weight: 400;
     font-size: 16px;
-    letter-spacing: 0.03;
 
     color: #cdcdcd;
   }
@@ -126,7 +116,6 @@
   font-family: $primaryfont;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.03em;
 
   color: #cdcdcd;
 }
@@ -136,9 +125,6 @@
     padding-top: 0;
     padding-bottom: 76px;
   }
-  //   .contacts-page__form-container {
-  //     width: 688px;
-  //   }
 
   .contact-form {
     margin: 0 auto;
