@@ -20,7 +20,7 @@
 .topmenu-list__svg {
   margin-left: 4px;
 
-  transition: transform 500ms;
+  transition: transform 250ms;
 }
 .services-dropdown__link:hover .topmenu-list__svg,
 .services-dropdown__link:focus .topmenu-list__svg {
@@ -33,7 +33,7 @@
 .submenu-list {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 500ms linear, visibility 500ms linear, transform 500ms;
+  transition: opacity 250ms linear, visibility 250ms linear, transform 250ms;
 }
 
 @media screen and (min-width: 1440px) {
@@ -48,7 +48,7 @@
     opacity: 1;
     visibility: visible;
     animation: fadeIn;
-    animation-duration: 500ms;
+    animation-duration: 250ms;
   }
   .services-dropdown__item {
     position: relative;
@@ -90,7 +90,7 @@
   .burger-btn {
     margin-right: 46px;
   }
-  .menu-tel-btn {
+  .menu-tel {
     margin-right: 21px;
   }
 }
@@ -115,7 +115,7 @@
 
   display: none;
   animation: fadeIn;
-  animation-duration: 500ms;
+  animation-duration: 250ms;
 
   top: 47px;
   left: 10px;
@@ -144,6 +144,7 @@
 // ------------Tel-menu end------
 
 // -------- Lang-menu ----------
+
 .menu-lang-btn,
 .menu-lang-dropdown__link {
   font-family: $fontNav;
@@ -171,7 +172,7 @@
 
   display: none;
   animation: fadeIn;
-  animation-duration: 500ms;
+  animation-duration: 250ms;
 
   top: -6px;
   left: 18px;
@@ -182,6 +183,11 @@
   text-align: center;
   background-color: $whiteColor;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-lang-btn:hover + .menu-lang-dropdown,
+.menu-lang-btn:focus + .menu-lang-dropdown {
+  display: inline-block;
 }
 
 // ----------- Lang-menu end ------------
