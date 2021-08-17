@@ -1,0 +1,36 @@
+.create-model__section {
+  @media screen and (max-width: 767px) {
+    margin-top: 248px;
+  }
+}
+.create-model__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 52px;
+  color: $titleColor;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    margin-bottom: 52px;
+  }
+}
+.create-model__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.create-model__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 12px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 20px;
+  }
+}

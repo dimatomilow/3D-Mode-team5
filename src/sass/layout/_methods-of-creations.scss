@@ -1,0 +1,88 @@
+.creations__section {
+  @media screen and (max-width: 767px) {
+    margin-top: 52px;
+  }
+  position: relative;
+}
+.creations__section::after {
+  content: '';
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 280px;
+    height: 164px;
+    margin-top: 32px;
+    background-image: url('/images/modelling/mobile/pic.jpg');
+  }
+  @media not all,
+    screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/mobile/pic@2x.jpg');
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 20px;
+    right: 94px;
+    width: 246px;
+    height: 144px;
+    background-image: url('/images/modelling/tablet/pic.jpg');
+  }
+  @media not all,
+    screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/tablet/pic@2x.jpg');
+  }
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    bottom: 27px;
+    right: 617px;
+    width: 246px;
+    height: 144px;
+    background-image: url('/images/modelling/desktop/pic.jpg');
+  }
+  @media not all,
+    screen and (min-width: 1440px) and (min-resolution: 192dpi) and (min-width: 1440px) and (min-resolution: 2dppx) {
+    background-image: url('/images/modelling/tablet/pic@2x.jpg');
+  }
+}
+.creations__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.27;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: $titleColor;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and(min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+.creations__text {
+  position: relative;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.27;
+  }
+}
+.creations__text::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  background-color: #487996;
+  border-radius: 3px 0px;
+  letter-spacing: 0;
+}
