@@ -27,9 +27,9 @@
 @media screen and (min-width: 768px) {
   .hero-scanning {
     margin-top: 24px;
-    background-position: right bottom;
+    // background-position: right bottom;
     background-image: url(/images/scan-process/hero-scanning/tablet/Scanning_photo1tablet.jpg);
-    background-position: 100% 85%;
+    background-position: 101% 85%;
     margin-bottom: 52px;
     padding-bottom: 0%;
   }
@@ -41,5 +41,34 @@
   }
   .hero-scanning__content {
     width: 515px;
+  }
+}
+
+// PC версия ----------
+@media screen and (min-width: 1440px) {
+  .hero-scanning {
+    background-image: url(/images/scan-process/hero-scanning/PC/Scanning_photo1.jpg);
+    background-position: 80% 115%;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+  }
+  .hero-scanning__title {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  .hero-scanning__content {
+    font-size: 18px;
+  }
+  .hero-scanning__content:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .hero-scanning__pc {
+    width: 50%;
+  }
+  .current {
+    display: flex;
+  }
+  .last-p {
+    margin-top: 81px;
   }
 }
