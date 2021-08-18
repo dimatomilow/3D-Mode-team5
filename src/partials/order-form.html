@@ -1,52 +1,56 @@
-<section class="take-order__form">
-    <div class="order-form">
-        <form action="#">
-            <div class="order-form__wrapper">
-                <p class="order-form__title">Зв'яжіться з нами</p>
-                <input class="order-form__input order-form__input--first" placeholder="Ім'я" type="text" name="user-name" id="user-name" minlength="2"
-                    pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я повинно містити символи латиниці або кирилиці" required type="text">
-                <input class="order-form__input" placeholder="Email" type="email" name="email" id="email" required>
-                <div class="order-form__choice-wrapper">
-                    <select class="order-form__choice">
-                        <option class="order-form__choice-type" label="Види пластика" value="1" selected>Види пластика</option>
-                        <option class="order-form__choice-type">Поліетилен терефталат</option>
-                        <option class="order-form__choice-type">Полівінілхлорид</option>
-                        <option class="order-form__choice-type">Поліпропілен</option>
-                        <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
-                    </select>
-                </div>
-                <div class="order-form__choice-wrapper">
-                    <select class="order-form__choice">
-                        <option class="order-form__choice-type" label="" value="1" selected>Якість друку</option>
-                        <option class="order-form__choice-type">300 мікрон</option>
-                        <option class="order-form__choice-type">200 мікрон</option>
-                        <option class="order-form__choice-type">100 мікрон</option>
-                        <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
-                    </select>
-                </div>
-                <div class="order-form__choice-wrapper">
-                    <select class="order-form__choice">
-                        <option class="order-form__choice-type" label="" value="1" selected>Колір</option>
-                        <option class="order-form__choice-type">Чорний</option>
-                        <option class="order-form__choice-type">Сірий</option>
-                        <option class="order-form__choice-type">Червоний</option>
-                        <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
-                    </select>
-                </div>
-                <label class="order-form__lable" for="feedback"> Повідомлення
-                <textarea class="order-form__feedback" name="text" id="feedback" placeholder="Залишіть своє повідомлення"></textarea>
-                </label> 
-                <div class="add-docs__wrapper">
-                    <input class="add-docs" placeholder="" type="file" name="add-docs" id="add-docs" required>
-                    <label class="add-docs__img" for="add-docs">
-                        <svg class="order-form__icon" width="20px" height="20px">
-                            <use href="../src/images/sprite.svg#icon-paper-clip"></use>
-                        </svg>
+
+    <section class="take-order__form">
+        <div class="order-form">
+            <form action="#">
+                <div class="order-form__wrapper">
+                    <p class="order-form__title">Зв'яжіться з нами</p>
+                    <input class="order-form__input order-form__input--first" placeholder="Ім'я" type="text"
+                        name="user-name" id="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                        title="Ім'я повинно містити символи латиниці або кирилиці" required>
+                    <input class="order-form__input" placeholder="Email" type="email" name="email" id="email" required>
+                    <div class="order-form__choice-wrapper">
+                        <select class="order-form__choice">
+                            <option class="order-form__choice-type" label="Види пластика" value="1" selected>Види
+                                пластика
+                            </option>
+                            <option class="order-form__choice-type">Поліетилен терефталат</option>
+                            <option class="order-form__choice-type">Полівінілхлорид</option>
+                            <option class="order-form__choice-type">Поліпропілен</option>
+                            <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
+                        </select>
+                    </div>
+                    <div class="order-form__choice-wrapper">
+                        <select class="order-form__choice">
+                            <option class="order-form__choice-type" value="1" selected>Якість друку</option>
+                            <option class="order-form__choice-type">300 мікрон</option>
+                            <option class="order-form__choice-type">200 мікрон</option>
+                            <option class="order-form__choice-type">100 мікрон</option>
+                            <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
+                        </select>
+                    </div>
+                    <div class="order-form__choice-wrapper">
+                        <select class="order-form__choice">
+                            <option class="order-form__choice-type" value="1" selected>Колір</option>
+                            <option class="order-form__choice-type">Чорний</option>
+                            <option class="order-form__choice-type">Сірий</option>
+                            <option class="order-form__choice-type">Червоний</option>
+                            <option class="order-form__choice-type">Труднощі у виборі - ми допоможемо</option>
+                        </select>
+                    </div>
+                    <label class="order-form__lable" for="feedback"> Повідомлення
+                        <textarea class="order-form__feedback" name="text" id="feedback"
+                            placeholder="Залишіть своє повідомлення"></textarea>
                     </label>
+                    <div class="add-docs__wrapper">
+                        <input class="add-docs" type="file" name="add-docs" id="add-docs" required>
+                        <label class="add-docs__img" for="add-docs">
+                            <svg class="order-form__icon" width="20px" height="20px">
+                                <use href="../src/images/sprite.svg#icon-paper-clip"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <p class="order-form__clue">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+                    <button class="order__button" type="submit">Відправити</button>
                 </div>
-                <p class="order-form__clue">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>            
-                <button class="order__button" type="submit">Відправити</button>
-            </div>
-        </form>
-    </div>
-</section>
+            </form>
+        
