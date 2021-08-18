@@ -1,0 +1,39 @@
+<section class="take-order__form">
+    <div class="order-form">
+        <form action="#">
+            <div class="order-form__wrapper">
+                <p class="order-form__title">Зв'яжіться з нами</p>
+                <input class="order-form__input order-form__input--first" placeholder="Ім'я" type="text" name="user-name" id="user-name" minlength="2"
+                    pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Ім'я повинно містити символи латиниці або кирилиці" required type="text">
+                <input class="order-form__input" placeholder="Email" type="email" name="email" id="email" required>
+                <select class="order-form__choice">
+                    <option label="" value="1" selected>Види пластика</option>
+                    <option>Поліетилен терефталат</option>
+                    <option>Полівінілхлорид</option>
+                    <option>Поліпропілен</option>
+                    <option>Труднощі у виборі - ми допоможемо</option>
+                </select>
+                <select class="order-form__choice">
+                    <option label="" value="1" selected>Якість друку</option>
+                    <option>300 мікрон</option>
+                    <option>200 мікрон</option>
+                    <option>100 мікрон</option>
+                    <option>Труднощі у виборі - ми допоможемо</option>
+                </select>
+                <select class="order-form__choice">
+                    <option label="" value="1" selected>Колір</option>
+                    <option>Чорний</option>
+                    <option>Сірий</option>
+                    <option>Червоний</option>
+                    <option>Труднощі у виборі - ми допоможемо</option>
+                </select>
+                <label class="order-form__lable" for="feedback"> Повідомлення
+                <textarea class="order-form__feedback" name="text" id="feedback" placeholder="Залишіть своє повідомлення"></textarea>
+                <input class="add-docs" placeholder="" type="file" name="add-docs" id="add-docs" required>
+                </label> 
+                <p class="order-form__clue">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>            
+                <button class="order__button" type="submit">Відправити</button>
+            </div>
+        </form>
+    </div>
+</section>
