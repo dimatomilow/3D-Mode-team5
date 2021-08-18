@@ -32,15 +32,25 @@
 
       <label class="contact-form__ms-label">
         Повідомлення
-        <div class="contact-form__message-wrapper">
-          <textarea
-            name="user-message"
-            class="contact-form__message"
-            placeholder="Залишіть своє повідомлення"
-          ></textarea>
-          <svg class="contact-form__icon">
-            <use href="./images/sprite.svg#icon-paper-clip"></use>
-          </svg>
+        <textarea
+          name="user-message"
+          class="contact-form__message"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+
+        <div class="add-docs__contact-form-wrapper">
+          <input
+            class="add-docs-contact-form"
+            placeholder=""
+            type="file"
+            name="add-docs-contact-form"
+            id="add-docs-contact-form"
+          />
+          <label class="add-docs__contact-img" for="add-docs-contact-form">
+            <svg class="contact-form__icon">
+              <use href="./images/sprite.svg#icon-paper-clip"></use>
+            </svg>
+          </label>
         </div>
       </label>
       <p class="contact-form__note">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
