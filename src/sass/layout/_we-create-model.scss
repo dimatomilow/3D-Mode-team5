@@ -1,12 +1,15 @@
 .create-model__section {
   @media screen and (max-width: 767px) {
     margin-top: 248px;
+    margin-bottom: 76px;
   }
   @media screen and (min-width: 768px) {
     margin-top: 52px;
+    margin-bottom: 76px;
   }
   @media screen and (min-width: 1440px) {
     margin-top: 100px;
+    margin-bottom: 116px;
   }
 }
 .create-model__title {
@@ -60,19 +63,16 @@
     margin-right: 20px;
   }
 }
-.button-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 116px;
-  width: 100%;
+.button-link.primary-button {
+  display: block;
   margin-top: 52px;
-  margin-bottom: 76px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 277px;
+  }
 
   @media screen and (min-width: 1440px) {
     margin-top: 116px;
-    margin-bottom: 116px;
   }
 }
