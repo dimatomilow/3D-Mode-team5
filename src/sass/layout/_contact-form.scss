@@ -130,6 +130,10 @@
   color: #cdcdcd;
 }
 
+.contact-form__btn {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .contacts-page-section {
     padding-top: 0;
@@ -153,6 +157,7 @@
   .contact-form__btn {
     width: 177px;
     align-self: flex-end;
+    margin: 0;
   }
 }
 
