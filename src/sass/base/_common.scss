@@ -30,7 +30,6 @@ a {
   text-decoration: none;
 }
 
-
 .background {
   z-index: -1;
   margin: 0 auto;
@@ -809,7 +808,9 @@ a {
   background-size: contain;
   border-radius: 72px;
 }
+
 @media screen and (max-width: 1439px) {
   .rectangle55 {
     display: none;
   }
+}
