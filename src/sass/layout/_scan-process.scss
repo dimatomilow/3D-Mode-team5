@@ -1,3 +1,7 @@
+.scanning {
+  margin-bottom: 184px;
+}
+
 .scanning__title {
   font-weight: 700;
   font-size: 18px;
@@ -57,9 +61,6 @@
   display: flex;
   flex-direction: column;
 }
-.primary-button {
-  margin: 52px 20px 76px 20px;
-}
 // tablet--------
 @media screen and (min-width: 768px) {
   .scanning__title {
@@ -87,9 +88,6 @@
     flex-direction: column;
     display: flex;
   }
-  .primary-button {
-    margin: 52px 245px 76px 246px;
-  }
 }
 @media screen and (min-width: 1440px) {
   .scanning__title {
@@ -98,6 +96,7 @@
   }
   .scanning__processing {
     margin: -11px;
+    margin-bottom: 256px;
   }
   .scanning__item {
     justify-content: flex-end;
@@ -117,8 +116,5 @@
   }
   .scanning__item:nth-child(3) > .scanning__list {
     max-width: 171px;
-  }
-  .primary-button {
-    margin: 100px 581px 100px 582px;
   }
 }
