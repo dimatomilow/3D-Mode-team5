@@ -58,6 +58,36 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #487996;
+  position: relative;
+}
+
+.order-form__choice {
+  appearance: none;
+  overflow: hidden;
+}
+
+.order-form__choice:active .order-form__choice-wrapper::after {
+  transform: rotate(180deg);
+}
+
+.order-form__choice-wrapper {
+  position: relative;
+}
+
+.order-form__choice-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../images/take-order/triangle.svg);
+  background-repeat: no-repeat;
+
+  width: 19px;
+  height: 13px;
+
+  right: 0;
+  bottom: 8px;
+
+  pointer-events: none;
 }
 
 .order-form__input--first {
