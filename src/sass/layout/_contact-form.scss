@@ -88,16 +88,26 @@
     border-color: $iconColor;
   }
 }
-.contact-form__message-wrapper {
+
+.add-docs__contact-form-wrapper {
   position: relative;
+}
+
+.add-docs-contact-form {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.add-docs__contact-img {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
 }
 .contact-form__icon {
   display: block;
   width: 22px;
   height: 20px;
-  position: absolute;
-  right: 21px;
-  bottom: 21px;
 
   fill: #cdcdcd;
 
