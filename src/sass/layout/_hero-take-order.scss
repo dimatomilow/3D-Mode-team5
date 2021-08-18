@@ -1,3 +1,15 @@
+.take-order__hero {
+  padding-top: 32px;
+
+  @media screen and(min-width:768px) {
+    padding-top: 44px;
+  }
+
+  @media screen and(min-width:1440px) {
+    padding-top: 85px;
+  }
+}
+
 .take-order__hero:not(:first-child) {
   padding-top: 52px;
 }

@@ -1,7 +1,6 @@
 .header__line {
   display: flex;
   align-items: center;
-  color: $fontNav;
 }
 .header__nav {
   display: flex;
@@ -111,15 +110,17 @@
   color: $langColor;
 }
 .menu-lang-btn {
-  min-width: 58px;
-  min-height: 40px;
+  min-width: 31px;
+  min-height: 18px;
   border: none;
   background-color: $whiteColor;
   cursor: pointer;
+  padding: 0;
 }
 
 .menu-lang {
   position: relative;
+  margin-right: 28px;
 }
 
 .menu-lang-dropdown {
@@ -169,10 +170,7 @@
     margin-right: 174px;
   }
   .burger-btn {
-    margin-right: 117px;
-  }
-  .phone-list {
-    margin-left: auto;
+    margin-right: 82px;
   }
 }
 
@@ -182,7 +180,6 @@
   }
 
   .phone-list__link {
-    font-family: $fontNav;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -216,12 +213,11 @@
   .logo-header {
     margin-right: 213px;
   }
-  .topmenu-list {
+  .header__nav {
     margin-right: 109px;
   }
-
-  .phone-list {
-    margin-left: auto;
+  .menu-lang {
+    margin-right: 94px;
   }
 }
 

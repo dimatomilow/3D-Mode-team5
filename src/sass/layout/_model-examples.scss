@@ -82,11 +82,14 @@
   right: 0;
 }
 .examples {
+  padding-top: 32px;
   padding-bottom: 52px;
   @media screen and (min-width: 768px) {
+    padding-top: 44px;
     padding-bottom: 46px;
   }
   @media screen and (min-width: 1444px) {
+    padding-top: 85px;
     padding-bottom: 100px;
   }
 }
