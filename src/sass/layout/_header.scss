@@ -267,12 +267,6 @@
 // -------- Submenu ----------
 
 @media screen and (min-width: 1400px) {
-  .submenu-list {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 250ms linear;
-  }
-
   .services-dropdown__item:hover > .submenu-list,
   .services-dropdown__item:focus-within > .submenu-list {
     opacity: 1;
@@ -296,16 +290,21 @@
 
   .submenu-list {
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 250ms linear;
+
     text-align: center;
 
-    padding: 10px 0 10px;
-    top: 20px;
-    left: -40px;
+    padding: 30px 0 15px;
+    top: -5px;
+    left: -38px;
     width: 144px;
 
     border-radius: 0px 0px 72px 72px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
+
   .submenu-list__link {
     transition: all 250ms linear;
   }
@@ -333,8 +332,8 @@
 
     transition: all 250ms linear;
   }
-  .services-dropdown__link:hover .topmenu-list__svg,
-  .services-dropdown__link:focus .topmenu-list__svg {
+  .services-dropdown__item:hover .topmenu-list__svg,
+  .services-dropdown__item:focus-within .topmenu-list__svg {
     transform: rotateX(180deg);
   }
 }
