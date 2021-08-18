@@ -3,6 +3,7 @@
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
+    body: document.querySelector('[data-body]'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleModal);
@@ -10,5 +11,6 @@
 
   function toggleModal() {
     refs.menu.classList.toggle('is-open');
+    refs.body.classList.toggle('is-scrolling-disabled');
   }
 })();
