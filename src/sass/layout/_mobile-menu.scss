@@ -1,0 +1,116 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $whiteColor;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    background-image: url(../images/mobile-menu/mobile-menu.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    background-image: url(../images/mobile-menu/tablet-menu.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.close-btn {
+  padding: 4px;
+}
+
+.backdrop-list {
+  text-align: center;
+}
+
+.backdrop-list__link,
+.backdrop-list__text {
+  font-family: $primaryfont;
+
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.25;
+
+  color: $titleColor;
+  text-transform: uppercase;
+  transition: all 250ms linear;
+}
+
+.backdrop-list__link-style {
+  text-shadow: 1px 1px 0px #487996, 1px -1px 0px #487996, -1px 1px 0px #487996,
+    -1px -1px 0px #487996, 1px 0px 0px #487996, 0px 1px 0px #487996, -1px 0px 0 #487996,
+    0px -1px 0 #487996;
+  color: #ffffff;
+}
+.backdrop-list__link:focus,
+.backdrop-list__link:hover {
+  text-shadow: 1px 1px 0px #487996, 1px -1px 0px #487996, -1px 1px 0px #487996,
+    -1px -1px 0px #487996, 1px 0px 0px #487996, 0px 1px 0px #487996, -1px 0px 0 #487996,
+    0px -1px 0 #487996;
+  color: #ffffff;
+}
+
+.backdrop-list__link-servises {
+  font-family: $primaryfont;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+
+  color: $titleColor;
+  transition: all 250ms linear;
+}
+
+.backdrop-list__link-servises:focus,
+.backdrop-list__link-servises:hover {
+  text-shadow: 1px 1px 0px #487996, 1px -1px 0px #487996, -1px 1px 0px #487996,
+    -1px -1px 0px #487996, 1px 0px 0px #487996, 0px 1px 0px #487996, -1px 0px 0 #487996,
+    0px -1px 0 #487996;
+  color: #ffffff;
+}
+
+.backdrop-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.backdrop-list__item-servises {
+  margin-bottom: 24px;
+}
+
+.backdrop-list__item-servises::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background: $titleColor;
+  border-radius: 3px 0px;
+}
+
+.backdrop-list__item-servises {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
