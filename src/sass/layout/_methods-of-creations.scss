@@ -1,12 +1,13 @@
 .creations__section {
-  @media screen and (max-width: 767px) {
-    margin-top: 52px;
-  }
+  padding-top: 52px;
+  padding-bottom: 32px;
+
   @media screen and (min-width: 768px) {
-    margin-top: 50px;
+    padding-top: 50px;
   }
   @media screen and (min-width: 1440px) {
-    margin-top: 116px;
+    padding-top: 0;
+    padding-bottom: 100px;
   }
 }
 .creations__title {
@@ -34,13 +35,15 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1.25;
-  margin-bottom: 16px;
-  letter-spacing: 0;
   @media screen and (min-width: 1440px) {
     font-size: 18px;
     line-height: 1.27;
     max-width: 515px;
   }
+}
+
+.creations__text:not(:last-child) {
+  margin-bottom: 16px;
 }
 .creations__text::before {
   content: '';
@@ -58,6 +61,7 @@
 }
 .creations__list::after {
   content: '';
+  top: 240px;
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,6 +84,7 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     width: 246px;
     height: 144px;
+    top: -12px;
     bottom: 30px;
     right: 20px;
     background-image: url('/images/modelling/tablet/pic.jpg');
@@ -99,8 +104,6 @@
   }
   @media not all,
     screen and (max-width: 767px) and (min-resolution: 192dpi) and (max-width: 767px) and (min-resolution: 2dppx) {
-    width: 280px;
-    height: 164px;
     background-image: url('/images/modelling/mobile/pic@2x.jpg');
   }
 }
