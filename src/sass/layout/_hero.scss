@@ -93,14 +93,6 @@
   }
 }
 
-.anchor__box {
-  position: absolute;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
 .anchor-icon__link {
   text-align: center;
   position: absolute;
@@ -129,5 +121,9 @@
   @media screen and (min-width: 1440px) {
     width: 32px;
     height: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
