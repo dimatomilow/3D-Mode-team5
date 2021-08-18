@@ -21,14 +21,12 @@
   text-transform: uppercase;
   margin-top: 24px;
   margin-bottom: 52px;
+  text-decoration: none;
   &.last {
     margin-bottom: 0;
   }
 }
 
-.process__link {
-  text-decoration: none;
-}
 @media screen and (min-width: 768px) {
   .process__item {
     display: flex;
