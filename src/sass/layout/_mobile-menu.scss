@@ -11,20 +11,23 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms linear, visibility 250ms linear;
-  background-image: url(../images/decor.png);
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-position: top;
-  background-size: cover;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
-    background-image: url(../images/decor-tablet.jpg);
+    background-image: url(../images/decor.png);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: top;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    background-image: url(../images/mobile-menu/tablet-menu-@1x.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top;
   }
 }
 

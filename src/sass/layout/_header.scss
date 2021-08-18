@@ -111,8 +111,10 @@
   color: $langColor;
 }
 .menu-lang-btn {
+  min-width: 58px;
+  min-height: 40px;
   border: none;
-  background-color: transparent;
+  background-color: $whiteColor;
   cursor: pointer;
 }
 
@@ -127,8 +129,8 @@
   opacity: 0;
   transition: all 250ms linear;
 
-  top: -6px;
-  left: 18px;
+  top: 3px;
+  left: 29px;
   transform: translate(-50%);
   width: 60px;
   padding: 6px 10px 10px 10px;
@@ -167,7 +169,7 @@
     margin-right: 174px;
   }
   .burger-btn {
-    margin-right: 60px;
+    margin-right: 117px;
   }
   .phone-list {
     margin-left: auto;
