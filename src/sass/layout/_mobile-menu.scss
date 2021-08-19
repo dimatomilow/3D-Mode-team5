@@ -13,13 +13,13 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.container-menu {
-  padding: 0 20px;
+// .container-menu {
+//   padding: 0 20px;
 
-  @media screen and (min-width: 768px) {
-    padding: 0 194px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     padding: 0 194px;
+//   }
+// }
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: top;
-    background-size: cover;
+    // background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
@@ -121,4 +121,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-menu {
+  padding: 32px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 45px 194px;
+  }
 }

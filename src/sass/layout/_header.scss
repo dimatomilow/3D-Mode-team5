@@ -62,11 +62,11 @@
 
   transition: all 250ms linear;
 
-  top: 47px;
+  top: 35px;
   left: 10px;
   transform: translate(-50%);
   width: 162px;
-  padding: 17px 0;
+  padding: 10px 0;
   border-radius: 4px;
   text-align: center;
   background-color: $whiteColor;
@@ -79,9 +79,9 @@
   display: block;
 
   left: 44%;
-  bottom: 71px;
-  width: 25px;
-  height: 25px;
+  bottom: 57px;
+  width: 22px;
+  height: 22px;
 
   transform: rotate(45deg);
   z-index: -1;
@@ -120,7 +120,7 @@
 
 .menu-lang {
   position: relative;
-  margin-right: 28px;
+  margin-right: 27px;
 }
 
 .menu-lang-dropdown {
@@ -130,8 +130,8 @@
   opacity: 0;
   transition: all 250ms linear;
 
-  top: 3px;
-  left: 29px;
+  top: -7px;
+  left: 17px;
   transform: translate(-50%);
   width: 60px;
   padding: 6px 10px 10px 10px;
