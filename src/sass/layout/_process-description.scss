@@ -20,13 +20,14 @@
   margin: 0 auto;
   text-transform: uppercase;
   margin-top: 24px;
+}
+.process__item:not(:last-child) {
   margin-bottom: 52px;
-  text-decoration: none;
-  &.last {
-    margin-bottom: 0;
-  }
 }
 
+.process__link {
+  text-decoration: none;
+}
 @media screen and (min-width: 768px) {
   .process__item {
     display: flex;
@@ -51,10 +52,6 @@
   }
 }
 @media screen and (min-width: 1444px) {
-  .process__box {
-    margin: 0 auto;
-    max-width: 940px;
-  }
   .primary-button.process-btn {
     margin-top: 70px;
   }
