@@ -83,6 +83,7 @@
   width: 22px;
   height: 22px;
 
+  background-color: $whiteColor;
   transform: rotate(45deg);
   z-index: -1;
 }
@@ -120,7 +121,7 @@
 
 .menu-lang {
   position: relative;
-  margin-right: 27px;
+  margin-right: auto;
 }
 
 .menu-lang-dropdown {
