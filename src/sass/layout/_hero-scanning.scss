@@ -1,5 +1,5 @@
 .hero-scanning {
-  padding-top: 32px;
+  padding-top: 3px;
 
   padding-bottom: 248px;
   background-image: url(/images/scan-process/hero-scanning/mobile/Scanning_photo1.jpg);
@@ -35,7 +35,7 @@
 // tablet-------
 @media screen and (min-width: 768px) {
   .hero-scanning {
-    padding-top: 44px;
+    padding-top: 25px;
     background-image: url(/images/scan-process/hero-scanning/tablet/Scanning_photo1tablet.jpg);
     background-image: url(/images/scan-process/hero-scanning/tablet/Scanning_photo@1tablet.webp);
     background-position: 97% 89%;
@@ -68,7 +68,7 @@
     background-image: url(/images/scan-process/hero-scanning/PC/Scanning_photo1.jpg);
     background-image: url(/images/scan-process/hero-scanning/PC/Scanning_photo1.webp);
     background-position: 80% 86%;
-    padding-top: 85px;
+    padding-top: 45px;
     padding-bottom: 100px;
     margin-bottom: 0;
     @media screen and(min-device-pixel-ratio: 2),

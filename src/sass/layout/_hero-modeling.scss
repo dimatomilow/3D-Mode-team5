@@ -1,14 +1,15 @@
 .modelling__section {
   @media screen and (min-width: 768px) {
+    padding-top: 25px;
     padding-bottom: 50px;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
-    padding-top: 83px;
+    padding-top: 45px;
     padding-bottom: 100px;
   }
-  padding-top: 44px;
+  padding-top: 3px;
 }
 .modelling__title {
   font-weight: bold;
